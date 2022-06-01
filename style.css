@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+  }
+body{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#author{
+	color:white;
+	/* margin-top:2rem; */
+}
+.outer-container{
+	display: flex;
+	flex-direction: column;
+	height: 40rem;
+	width:30rem;
+	background-color: grey;
+	align-items: center;
+	justify-content: space-around;
+	border: 5px solid black;
+	border-radius: 5px;
+	
+}
+
+@media only screen and (max-width: 572px) {
+	.outer-container{
+		height:30rem;
+		width:95%;
+	}
+
+	.key{
+		font-size: 1rem !important;
+	}
+
+}
+.calculator-heading{
+	display: flex;
+	height: 3rem;
+	width: 90%;
+	background-color: rgb(39, 38, 38);
+	justify-content:center;
+	align-items: center;
+	border-radius: 5px;
+	border: 3px solid rgb(117, 114, 114);
+	box-shadow:2px 2px 2px 2px;
+}
+
+.calculator-heading p{
+	color: white;
+	font-size:2rem
+}
+
+.display-result{
+	position: relative;
+	height: 8rem;
+	width: 90%;
+	background-color: white;
+	/* margin-top: 2rem; */
+	border-radius: 5px;
+	border: 2px solid rgb(236, 206, 206);
+	box-shadow:2px 2px 10px 5px rgb(71, 68, 68);
+	overflow: auto;
+}
+.display-result p{
+	text-align: right;
+	font-size: 2rem;
+	margin: 5rem 1rem;
+}
+
+
+#display-heading{
+	position: absolute;
+	text-align: top;
+	margin: 0 0 5rem 0;
+	font-size:1rem;
+}
+
+ 
+.key{
+	display: flex;
+	background-color: white;
+	border:1px solid grey;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	height: 20%;
+	width: 25%;
+	/* border: 2px solid rgb(161, 110, 110); */
+	box-shadow:2px 2px 10px 0 black;
+}
+
+/* .white-zero{
+	grid-column: 1/span 2; 
+	 width:50%
+} */
+
+.brown{
+	background-color: brown;
+} 
+
+.white{
+	background-color:white
+}
+
+.key:hover{
+	background-color: rgb(248, 248, 193);
+	border:none;
+	transition: 0.5s ease-in-out;
+}
+
+/* .key-container{
+	display: grid;
+	grid-template-columns: 5rem 5rem 5rem 5rem;
+	grid-template-rows: 3rem 3rem 3rem 3rem 3rem;
+	border: 2px solid rgb(161, 110, 110);
+	
+} */
+
+.key-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;	
+	width:90%;
+	height:40%;
+	padding: 1rem;
+	justify-content: center;
+	/* background-color: brown; */
+	box-shadow:1px 1px 1px 2px black;
+	/* border: 2px solid rgb(161, 110, 110); */
+}
